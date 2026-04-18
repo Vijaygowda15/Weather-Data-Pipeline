@@ -1,6 +1,6 @@
 # Weather Data Pipeline
 
-A real-time weather data pipeline that automatically collects weather data for five Indian cities every hour, processes it using PySpark, stores it in PostgreSQL, and visualises it in Power BI. The pipeline runs on a schedule using Apache Airflow, with all services managed through Docker.
+A real-time weather data pipeline that automatically collects weather data for five Indian cities every hour, processes it using PySpark, stores it in PostgreSQL. The pipeline runs on a schedule using Apache Airflow, with all services managed through Docker.
 
 ---
 
@@ -14,7 +14,6 @@ A real-time weather data pipeline that automatically collects weather data for f
 - [Pipeline Stages](#pipeline-stages)
 - [Database Tables](#database-tables)
 - [Airflow DAG](#airflow-dag)
-- [Power BI Setup](#power-bi-setup)
 - [Future Work](#future-work)
 
 ---
@@ -28,7 +27,6 @@ The goal of this project is to build a fully automated, end-to-end data pipeline
 - Pulls live weather data from the OpenWeatherMap API every hour
 - Cleans and enriches the raw data using PySpark
 - Loads the results into a structured PostgreSQL database
-- Makes the data available for real-time dashboards in Power BI
 - Runs on a schedule without any manual intervention, using Apache Airflow
 
 The entire system runs inside Docker containers, making it easy to set up on any machine.
@@ -48,8 +46,6 @@ OpenWeatherMap API
         ↓
    load.py        → Write to PostgreSQL (weather_readings + weather_summary)
         ↓
-   Power BI       → Connect to PostgreSQL for live dashboards
-        ↓
    Airflow        → Schedule and monitor the whole pipeline (every hour)
 ```
 
@@ -61,7 +57,7 @@ All services — Airflow webserver, Airflow scheduler, and PostgreSQL — run in
 
 | Tool | Purpose |
 |---|---|
-| Python 3.11 | Core language |
+| Python 3.12 | Core language |
 | Apache Airflow 2.8 | Pipeline scheduling and monitoring |
 | Apache PySpark 3.5 | Data transformation |
 | PostgreSQL 15 | Data storage |
@@ -69,41 +65,7 @@ All services — Airflow webserver, Airflow scheduler, and PostgreSQL — run in
 | SQLAlchemy | Python-to-PostgreSQL connection |
 | Pandas + PyArrow | Data processing and Parquet format |
 | OpenWeatherMap API | Live weather data source |
-| Power BI | Dashboard and visualisation |
 | AWS S3 (optional) | Cloud storage for raw files |
-
----
-
-## Project Structure
-
-```
-weather-data-pipeline/
-│
-├── docker-compose.yml       All Docker services defined here
-├── init_db.sql              Creates weather_db on first startup
-│
-├── pipeline.py              Run manually (without Airflow)
-├── extract.py               Stage 1 — API data collection
-├── store.py                 Stage 2 — Save raw + Parquet
-├── transform.py             Stage 3 — PySpark cleaning
-├── load.py                  Stage 4 — PostgreSQL loader
-├── config.py                Central configuration
-│
-├── dags/
-│   └── weather_pipeline_dag.py   Airflow DAG (hourly schedule)
-│
-├── data/
-│   ├── raw/                 Raw JSON files (timestamped)
-│   └── processed/           Parquet files (timestamped)
-│
-├── logs/                    Airflow task logs
-├── plugins/                 Airflow plugins folder
-│
-├── .env.example             Template for environment variables
-├── .gitignore               Excludes secrets and data files
-├── requirements.txt         Python dependencies
-└── README.md
-```
 
 ---
 
