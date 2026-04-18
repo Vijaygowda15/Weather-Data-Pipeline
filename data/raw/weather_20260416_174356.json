@@ -1,0 +1,233 @@
+[
+  {
+    "coord": {
+      "lon": 77.6033,
+      "lat": 12.9762
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 27.59,
+      "feels_like": 28.77,
+      "temp_min": 26.73,
+      "temp_max": 28.05,
+      "pressure": 1011,
+      "humidity": 59,
+      "sea_level": 1011,
+      "grnd_level": 914
+    },
+    "visibility": 6000,
+    "wind": {
+      "speed": 6.26,
+      "deg": 127,
+      "gust": 17.43
+    },
+    "clouds": {
+      "all": 52
+    },
+    "dt": 1776361185,
+    "sys": {
+      "type": 2,
+      "id": 2105374,
+      "country": "IN",
+      "sunrise": 1776299787,
+      "sunset": 1776344523
+    },
+    "timezone": 19800,
+    "id": 1277333,
+    "name": "Bengaluru",
+    "cod": 200,
+    "_extracted_at": "2026-04-16T17:43:55.036845"
+  },
+  {
+    "coord": {
+      "lon": 72.8479,
+      "lat": 19.0144
+    },
+    "weather": [
+      {
+        "id": 721,
+        "main": "Haze",
+        "description": "haze",
+        "icon": "50n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 27.99,
+      "feels_like": 30.52,
+      "temp_min": 27.99,
+      "temp_max": 27.99,
+      "pressure": 1009,
+      "humidity": 69,
+      "sea_level": 1009,
+      "grnd_level": 1008
+    },
+    "visibility": 4000,
+    "wind": {
+      "speed": 2.57,
+      "deg": 290
+    },
+    "clouds": {
+      "all": 2
+    },
+    "dt": 1776361261,
+    "sys": {
+      "type": 1,
+      "id": 9052,
+      "country": "IN",
+      "sunrise": 1776300644,
+      "sunset": 1776345949
+    },
+    "timezone": 19800,
+    "id": 1275339,
+    "name": "Mumbai",
+    "cod": 200,
+    "_extracted_at": "2026-04-16T17:43:55.403315"
+  },
+  {
+    "coord": {
+      "lon": 77.2167,
+      "lat": 28.6667
+    },
+    "weather": [
+      {
+        "id": 721,
+        "main": "Haze",
+        "description": "haze",
+        "icon": "50n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 30.05,
+      "feels_like": 28.54,
+      "temp_min": 30.05,
+      "temp_max": 30.05,
+      "pressure": 1006,
+      "humidity": 26,
+      "sea_level": 1006,
+      "grnd_level": 981
+    },
+    "visibility": 4000,
+    "wind": {
+      "speed": 2.57,
+      "deg": 130
+    },
+    "clouds": {
+      "all": 74
+    },
+    "dt": 1776361014,
+    "sys": {
+      "type": 1,
+      "id": 9165,
+      "country": "IN",
+      "sunrise": 1776299086,
+      "sunset": 1776345410
+    },
+    "timezone": 19800,
+    "id": 1273294,
+    "name": "Delhi",
+    "cod": 200,
+    "_extracted_at": "2026-04-16T17:43:55.893436"
+  },
+  {
+    "coord": {
+      "lon": 80.2785,
+      "lat": 13.0878
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 29.85,
+      "feels_like": 36.85,
+      "temp_min": 28.46,
+      "temp_max": 30,
+      "pressure": 1009,
+      "humidity": 85,
+      "sea_level": 1009,
+      "grnd_level": 1008
+    },
+    "visibility": 6000,
+    "wind": {
+      "speed": 3.09,
+      "deg": 200
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1776360982,
+    "sys": {
+      "type": 2,
+      "id": 2104103,
+      "country": "IN",
+      "sunrise": 1776299140,
+      "sunset": 1776343886
+    },
+    "timezone": 19800,
+    "id": 1264527,
+    "name": "Chennai",
+    "cod": 200,
+    "_extracted_at": "2026-04-16T17:43:56.669750"
+  },
+  {
+    "coord": {
+      "lon": 78.4744,
+      "lat": 17.3753
+    },
+    "weather": [
+      {
+        "id": 721,
+        "main": "Haze",
+        "description": "haze",
+        "icon": "50n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 33.23,
+      "feels_like": 35.62,
+      "temp_min": 30.73,
+      "temp_max": 33.23,
+      "pressure": 1008,
+      "humidity": 46,
+      "sea_level": 1008,
+      "grnd_level": 945
+    },
+    "visibility": 5000,
+    "wind": {
+      "speed": 3.6,
+      "deg": 120
+    },
+    "clouds": {
+      "all": 40
+    },
+    "dt": 1776360919,
+    "sys": {
+      "type": 1,
+      "id": 9214,
+      "country": "IN",
+      "sunrise": 1776299373,
+      "sunset": 1776344519
+    },
+    "timezone": 19800,
+    "id": 1269843,
+    "name": "Hyderabad",
+    "cod": 200,
+    "_extracted_at": "2026-04-16T17:43:56.832896"
+  }
+]

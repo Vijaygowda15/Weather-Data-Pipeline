@@ -1,0 +1,32 @@
+# Secrets — never commit
+.env
+_env
+
+# Data and generated files
+data/
+logs/
+*.parquet
+*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# Spark
+metastore_db/
+derby.log
+spark-warehouse/
+
+# Docker volumes
+postgres_data/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
