@@ -266,25 +266,6 @@ To stop and also delete the stored data:
 docker compose down -v
 ```
 
----
-
-## Power BI Setup
-
-1. Open Power BI Desktop
-2. Click Get Data and choose PostgreSQL
-3. Enter localhost as the server and weather_db as the database
-4. Import both the weather_readings and weather_summary tables
-5. Create a relationship between the two tables on city and ingested_date
-
-Suggested visuals:
-
-- Line chart of average temperature over time, split by city
-- Bar chart of average humidity ranked by city
-- Card showing the hottest city today
-- Slicer to filter by wind category or rain status
-
----
-
 ## Future Work
 
 **Add more cities** — extend the CITIES list in config.py to cover more locations across India or globally.
@@ -315,13 +296,6 @@ Email — vijaynvijay2002@gmail.com
 
 ---
 
-## Related Projects
-
-- Fraud Detection using ML and Rule-Based Filtering — github.com/Vijaygowda15/fraud-detection-ml
-- E-Commerce Sales Analytics Pipeline — github.com/Vijaygowda15/E-Commerce-Sales-Analytics-Pipeline
-- Tech Layoffs Analysis — github.com/Vijaygowda15/Tech-Layoffs-Analysis
-
----
 
 *This project was built as part of a data engineering portfolio.*
 *No real API keys or passwords are stored in this repository.*
